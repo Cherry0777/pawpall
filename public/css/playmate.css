@@ -783,7 +783,7 @@ body {
     padding: 0;
   }
   
-  .why-us .box:hover {
+  .why-us .box:hover{
     background: #cda45e;
     padding: 30px 30px 70px 30px;
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
@@ -913,7 +913,26 @@ body {
      height: 300px;
   }
 
-  
+  /*--------------------------------------------------------------
+  # Doctor List
+  --------------------------------------------------------------*/
+   #doc_list{
+    list-style-type: none;
+    font-family: "Playfair Display", serif;
+   }
+
+   .doc{
+    background-color:rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 10px 10px 50px 10px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+    transition: all ease-in-out 0.3s;
+   }
+
+   .doc:hover{
+    background-color: #cda45e;
+   }
+
   /*--------------------------------------------------------------
   # Contact
   --------------------------------------------------------------*/

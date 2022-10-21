@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", function (req, res){
-    res.sendFile(__dirname + "/playmates.html");
+    res.sendFile(__dirname + "/vets.html");
 });
 
 app.get("/:pagename", function (req, res){
