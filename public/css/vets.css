@@ -837,11 +837,12 @@
   .hero {
     width: 100%;
     min-height: 30vh;
-    background: #000;
+    background: url("/images/goldens2.jpg");
     background-size: cover;
     position: relative;
     padding: 140px 0 60px 0;
   }
+  
   
   .hero h2 {
     margin: 0 0 10px 0;
@@ -851,11 +852,16 @@
     font-family: var(--font-secondary);
   }
   
-  .hero h2 span {
+  .hero h2  span {
     position: relative;
     z-index: 1;
     padding: 0 5px;
     display: inline-block;
+  }
+
+  .hero .spann{
+    background-color: rgba(164, 152, 152, 0.6);
+    
   }
   
   .hero h2 span:before {
