@@ -4,21 +4,33 @@ const mysql = require('mysql');
 const _ = require("lodash");
 var path = require('path');
 const { reset } = require("nodemon");
-
-
-/* const db = mysql.createConnection({
+var db = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
-    password : '123456',
-    database : 'nodemysql'
-}) */
-
-/* db.connect((err) => {
+    password : 'mysql',
+    database : 'puparazzi'
+})
+db.connect(function(err) {
     if(err){
         throw err;
     }
-    console.log('MySQL connected...')
-}) */
+    console.log('MySQL connected...');
+        var pupid=100;
+        var pupname = pName;
+        var pupbreed = 'german shephard';
+        var pupage = 4;
+        var location="noida";
+        var username="jane12";
+        var pwd="op";
+        var ownername="jake";
+        var ownerage=9;
+        var phone=9819109019;
+        var sql="INSERT into profile values ("+pupid+",'"+pupname+"','"+ pupbreed +"', "+ pupage + ", '"+ location +"','"+username+"','" +pwd+"','"+ownername+"',"+ownerage+","+phone+")";
+            db.query(sql,function(err,result){
+              if(err) throw err;
+              console.log("record created"); 
+    });
+}) ;
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
