@@ -17,6 +17,7 @@ db.connect(function(err) {
     console.log('MySQL connected...');
         var pupid=100;
         var pupname = pName;
+<<<<<<< HEAD
         var pupbreed = pbreed;
         var pupage = p_age;
         var location=loc;
@@ -25,6 +26,16 @@ db.connect(function(err) {
         var ownername=own_name;
         var ownerage=own_age;
         var phone=phonenum;
+=======
+        var pupbreed = 'german shephard';
+        var pupage = 4;
+        var location="noida";
+        var username="jane12";
+        var pwd="op";
+        var ownername="jake";
+        var ownerage=9;
+        var phone=9819109019;
+>>>>>>> 351986aef170bf3941bdecde527542bc542990fd
         var sql="INSERT into profile values ("+pupid+",'"+pupname+"','"+ pupbreed +"', "+ pupage + ", '"+ location +"','"+username+"','" +pwd+"','"+ownername+"',"+ownerage+","+phone+")";
             db.query(sql,function(err,result){
               if(err) throw err;
