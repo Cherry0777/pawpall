@@ -1,0 +1,71 @@
+[33mcommit 670efe2d3c5d21b997d57727164593399dcb02db[m[33m ([m[1;36mHEAD -> [m[1;32mutility_findfrens[m[33m, [m[1;31morigin/utility_findfrens[m[33m)[m
+Author: Cherry0777 <sharatreddi71@gmail.com>
+Date:   Tue Oct 25 17:34:44 2022 +0530
+
+    modified app.js to accept current changes
+
+[33mcommit b6c8195f47e3f210c8397e10c06e04790c4b86e9[m
+Merge: 56f46c6 351986a
+Author: Cherry0777 <sharatreddi71@gmail.com>
+Date:   Tue Oct 25 17:26:00 2022 +0530
+
+    Merge branch 'utility_findfrens' of https://github.com/Cherry0777/pawpall into utility_findfrens
+
+[33mcommit 56f46c6ff0a5980d0cbc8cd6500a7b249601faee[m
+Author: Cherry0777 <sharatreddi71@gmail.com>
+Date:   Tue Oct 25 17:15:48 2022 +0530
+
+    linked app.js to signup.html
+
+[33mcommit 351986aef170bf3941bdecde527542bc542990fd[m
+Merge: 87b0bcd 0eb4da4
+Author: Cherry <110130577+Cherry0777@users.noreply.github.com>
+Date:   Sat Oct 22 23:55:00 2022 +0530
+
+    Merge pull request #3 from Alankriti29/patch-2
+    
+    Update app.js
+
+[33mcommit 0eb4da4cb3639eb6162e2173ea65d2f94b416830[m
+Author: Alankriti29 <80596875+Alankriti29@users.noreply.github.com>
+Date:   Sat Oct 22 14:02:16 2022 +0530
+
+    Update app.js
+    
+    updated signin pg queries
+
+[33mcommit 87b0bcd2d49305c025f363023735d345fad6cd9e[m
+Author: Cherry0777 <sharatreddi71@gmail.com>
+Date:   Sat Oct 22 09:40:02 2022 +0530
+
+    added bg img to hero sec
+
+[33mcommit 594c9ad395ed5e80ea93c97969019b11c9b3f493[m
+Author: Cherry0777 <sharatreddi71@gmail.com>
+Date:   Sat Oct 22 03:15:13 2022 +0530
+
+    added another utility page
+
+[33mcommit bf3e7cce110fc4e18bd197fca2c7c48d8056b884[m
+Author: Cherry0777 <sharatreddi71@gmail.com>
+Date:   Thu Oct 20 19:57:57 2022 +0530
+
+    added first utility i.e.; find_playmates
+
+[33mcommit d3ec714a8e82135ac10e0df6abd00e14d5656942[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Cherry0777 <sharatreddi71@gmail.com>
+Date:   Tue Sep 20 16:22:47 2022 +0530
+
+    changed gp folder
+
+[33mcommit 18469b08ff0b932489199658cb25935cfc2a65cc[m
+Author: Cherry0777 <sharatreddi71@gmail.com>
+Date:   Tue Sep 20 16:19:01 2022 +0530
+
+    added new UI
+
+[33mcommit 7f2e90abbb3210b2412d14c114addf02ccf28bbb[m
+Author: Cherry0777 <sharatreddi71@gmail.com>
+Date:   Wed Aug 24 16:00:58 2022 +0530
+
+    added all

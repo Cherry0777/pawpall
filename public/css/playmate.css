@@ -805,7 +805,16 @@ body {
     text-align: center;
     border-radius: 50px;
   }
-  
+  /*button styles*/
+  .butt{
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .butt:hover{
+    background-color: #cda45e;
+  }
+
   .menu #menu-flters li {
     cursor: pointer;
     display: inline-block;

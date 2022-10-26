@@ -583,11 +583,42 @@
   /*--------------------------------------------------------------
   # Pricing Section
   --------------------------------------------------------------*/
+  .table_div{
+    display: flex;
+    justify-content: center;
+ }
+
+  table{
+    width: 90%   ;
+    margin-top: 24px;
+    margin-left: 24px;
+    border-radius: 8px;
+}
+table, th{
+    
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: #000;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #2cbc85  ;
+    font-family: var(--font-primary)
+}
+td, th{
+    padding: 16px;
+}
+
+
+.tb-row{
+  background-color: black;
+}
+  
   .gallery {
     margin-top: 40px;
+    text-align: center;
   }
   
-  .img-fluid{
+  /* .img-fluid{
     height: 280px;
     width: 400px;
   }
@@ -657,7 +688,7 @@
   .glightbox-clean .gslide-title {
     color: rgba(255, 255, 255, 0.8);
     margin: 0;
-  }
+  } */
   
   /*--------------------------------------------------------------
   # Gallery Single Section
