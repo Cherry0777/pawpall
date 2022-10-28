@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", function (req, res){
-    res.sendFile(__dirname + "/playmates.html");
+    res.sendFile(__dirname + "/volunteers.html");
 });
 
 app.get("/:pagename", function (req, res){
@@ -40,6 +40,12 @@ app.get("/:pagename", function (req, res){
     }
     if(pgname == "Signup"){
         res.sendFile(__dirname + "/signup.html");
+    }
+    if(pgname == "Vets"){
+        res.sendFile(__dirname + "/vets.html");
+    }
+    if(pgname == "Playmates"){
+        res.sendFile(__dirname + "/playmates.html");
     }
 })
 

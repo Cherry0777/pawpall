@@ -563,7 +563,8 @@ body {
   }
   
   .section-title {
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
   
   .section-title h2 {
@@ -805,6 +806,9 @@ body {
     text-align: center;
     border-radius: 50px;
   }
+
+  
+
   /*button styles*/
   .butt{
     border-radius: 10px;
