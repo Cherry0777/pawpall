@@ -652,107 +652,6 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # About
-  --------------------------------------------------------------*/
-  .about {
-    background: url("../img/about-bg.jpg") center center;
-    background-size: cover;
-    position: relative;
-    padding: 80px 0;
-  }
-  
-  .about:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .about .about-img {
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .about .about-img img {
-    max-width: 100%;
-    border: 4px solid rgba(255, 255, 255, 0.2);
-    position: relative;
-  }
-  
-  .about .about-img::before {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    width: 60px;
-    height: 60px;
-    z-index: 1;
-    content: "";
-    border-left: 5px solid #cda45e;
-    border-top: 5px solid #cda45e;
-    transition: 0.5s;
-  }
-  
-  .about .about-img::after {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    width: 60px;
-    height: 60px;
-    z-index: 2;
-    content: "";
-    border-right: 5px solid #cda45e;
-    border-bottom: 5px solid #cda45e;
-    transition: 0.5s;
-  }
-  
-  .about .about-img:hover {
-    transform: scale(1.03);
-  }
-  
-  .about .about-img:hover::before {
-    left: 10px;
-    top: 10px;
-  }
-  
-  .about .about-img:hover::after {
-    right: 10px;
-    bottom: 10px;
-  }
-  
-  .about .content h3 {
-    font-weight: 600;
-    font-size: 26px;
-  }
-  
-  .about .content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about .content ul li {
-    padding-bottom: 10px;
-  }
-  
-  .about .content ul i {
-    font-size: 20px;
-    padding-right: 4px;
-    color: #cda45e;
-  }
-  
-  .about .content p:last-child {
-    margin-bottom: 0;
-  }
-  
-  @media (min-width: 1024px) {
-    .about {
-      background-attachment: fixed;
-    }
-  }
-  
-  /*--------------------------------------------------------------
   # Why Us
   --------------------------------------------------------------*/
   .why-us .box {
@@ -797,8 +696,32 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # Menu Section
+  # Doggo data Section
   --------------------------------------------------------------*/
+  .doggo-name {
+    color: #cda45e;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    background: #0c0b09;
+  }
+  
+  .doggo-name:hover {
+    color: #d9ba85;
+    text-decoration: none;
+  }
+  
+ .playdiv h3{
+  color: #0c0b09;
+  font-weight: 800;
+ } 
+
+  .playdiv {
+    background-color: #cda45e;
+    padding: 10px 8px;
+    border-radius: 8px;
+  }
+
+
   .menu #menu-flters {
     padding: 0;
     margin: 0 auto 0 auto;
@@ -807,16 +730,16 @@ body {
     border-radius: 50px;
   }
 
-  
-
   /*button styles*/
   .butt{
-    border-radius: 10px;
-    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(151, 128, 128); /* Green */
+    border-radius: 8px;
   }
 
   .butt:hover{
-    background-color: #cda45e;
+    background-color: #d9ba85;
   }
 
   .menu #menu-flters li {
@@ -832,7 +755,15 @@ body {
     border-radius: 50px;
     font-family: "Playfair Display", serif;
   }
-  
+
+  .doggo-form{
+    margin-bottom: 20px;
+  }
+
+  .popholder{
+    background-color: none;
+  }
+
   .menu #menu-flters li:hover,
   .menu #menu-flters li.filter-active {
     color: #cda45e;
@@ -862,7 +793,7 @@ body {
   }
   
   .menu .menu-content::after {
-    content: "......................................................................""....................................................................""....................................................................";
+    content: "                                   ....................................................";
     position: absolute;
     left: 20px;
     right: 0;
@@ -925,26 +856,6 @@ body {
      width: 612px;
      height: 300px;
   }
-
-  /*--------------------------------------------------------------
-  # Doctor List
-  --------------------------------------------------------------*/
-   #doc_list{
-    list-style-type: none;
-    font-family: "Playfair Display", serif;
-   }
-
-   .doc{
-    background-color:rgba(255, 255, 255, 0.8);
-    color: black;
-    padding: 10px 10px 50px 10px;
-    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
-    transition: all ease-in-out 0.3s;
-   }
-
-   .doc:hover{
-    background-color: #cda45e;
-   }
 
   /*--------------------------------------------------------------
   # Contact

@@ -15,6 +15,31 @@
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous"
   />
+ <style>
+    .forms{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px 5px;
+    }
+    .popage{
+        font-weight: 600;
+    }
+
+    .button-form{
+        padding: 3px 3px;
+    }
+    
+    .butt{
+        border-radius: 4px;
+        border: none;
+    }
+
+    .butt:hover{
+        background-color: #f5c87b;
+    }
+ </style>
+
 <link rel="shortcut icon" href="#">
 <link href="css/styles.css" rel="stylesheet">
 
@@ -26,21 +51,28 @@
   <body class="text-center">
     
 <main class="form-signin w-100 m-auto">
-  <form action="/check" method="POST">
     <img class="mb-4 doggo"  src="images/doggo1.png" alt="" width="80" height="100">
+    <h3>Your Fur-Requests!</h3>
+<%    pending.forEach(function(item){  %>
     <div id="pawdiv">
-        <span><h1 class="h3 mb-3 fw-normal">Hemlo, Puparazzi!!</h1></span>
-        <span><img class="paw" src="images/paw.png"></span>
+        <s class="popage" name="popage"><%= item.username2%></s>
     </div>
-    <input name="UName" type="text" class="form-control top"  placeholder="Username" required autofocus autocomplete="off">
-    <input name="Password" type="password" class="form-control middle"  placeholder="Paw-sword" required>
-    <!--<input name="email" type="email" class="form-control bottom" placeholder="Email" required>-->
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in!</button>
-    
-    <p>Not Registered till now? <a href="signup">Register Today</a></p>
+    <div class="forms">
+    <form class="button-form" action="/REQ" method="post">
+        <div>
+          <button onclick="app.post(/ACCEPTREQ)" class="butt" type="submit"><i>Accept</i></button>
+        </div>
+      </form>
+
+      <form class="button-form" action="/DELETEREQ" method="post">
+        <div>
+          <button onclick="app.post(/DELETEREQ)" class="butt" type="submit"><i>Reject</i></button>
+        </div>
+      </form>
+    </div>
+  <%    })   %>
 </main>
 
-
-    
+<script src="/app.js"></script>
   </body>
 </html>

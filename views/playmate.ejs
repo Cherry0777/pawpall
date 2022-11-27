@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Find Playmates</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- vendor2 CSS Files -->
+  <link href="assets/vendor2/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor2/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor2/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor2/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor2/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor2/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/playmate.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1>Find<span>Playmates</span></h1>
+            <h2>A Fur in need is a Friend indeed!</h2>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://youtu.be/k0zd0HWSO1I" class="glightbox play-btn"></a>
+          </div>
+  
+        </div>
+      </div>
+    </section><!-- End Hero -->
+
+     <main id="main">
+
+      <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p>Why do your pet need a furmate</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <h4>To Avoid Isolation</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <h4>For Friendly Interactions</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span>03</span>
+              <h4>Help Ease Separation Anxiety</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+  
+      <!-- ======= Doggo data Section ======= -->
+      <section id="menu" class="menu section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Look</h2>
+            <p>At your fur frens</p>
+          </div>
+
+          <%    playmate.forEach(function(item){  %>
+            <form class="doggo-form" >
+                <div class="col-lg-6 menu-item filter-specialty">
+                  <div class="menu-content">
+                    <a name="popname" href="#"><%= item.Pup_name %></a><span><%= item.Breed %></span>
+                  </div>
+                  <div class="menu-ingredients">
+                    <s class="play_span" name="popage"><%= item.Age %></s>, <s class="play_span" name="pop_owner_name"><%= item.Owner_name %></s> (<span><%= item.Username %></span>)
+                  </div>
+                </div>
+            </form>
+          <%    })   %>
+          <!-- <%    playmate.forEach(function(it){  %>
+            
+                <div class="col-lg-6 menu-item filter-specialty">
+                  <div class="menu-content">
+                    <a name="popname" href="#"><%= it%></a>
+                  </div>
+                </div>
+            
+          <%    })   %> -->
+<div class="playdiv">
+          <form action="/SENDREQ" method="post">
+            <div>
+              <h3>Username of the furmate u wanna befriend!</h3>
+              <input name="popname" type="text" id="furname">
+              <button class="butt" type="submit"><i>Send</i></button>
+            </div>
+          </form>
+          <br>
+          <form action="/frens" method="post">
+            <button class="butt" type="submit" placeholder="view">View your furmates</button> 
+          </form> 
+          <br>
+           <form action="/pending" method="post">
+            <button class="butt" type="submit" placeholder="view">View pending reqs</button> 
+          </form> 
+</div>        
+          <!-- <form action="/REQ" method="post">
+            <div>
+              <h3>Your Fur-Requests!</h3>
+              <button onclick="app.post(/ACCEPTREQ)" class="butt" type="submit"><i>Accept</i></button>
+            </div>
+          </form>
+
+          <form action="/DELETEREQ" method="post">
+            <div>
+              <button onclick="app.post(/DELETEREQ)" class="butt" type="submit"><i>Reject</i></button>
+            </div>
+          </form> -->
+        </div>
+      </section><!-- End Doggo Data Section -->
+
+          <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Some photos of our fur frens</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+  
+    </main><!-- End #main -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <!-- vendor2 JS Files -->
+    <script src="assets/vendor2/aos/aos.js"></script>
+    <script src="assets/vendor2/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor2/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor2/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor2/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor2/php-email-form/validate.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main1.js"></script>
+  
+  </body>
+  </html>

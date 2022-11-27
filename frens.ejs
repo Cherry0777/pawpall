@@ -14,6 +14,8 @@
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous"
+
+    
   />
 <link rel="shortcut icon" href="#">
 <link href="css/styles.css" rel="stylesheet">
@@ -26,21 +28,13 @@
   <body class="text-center">
     
 <main class="form-signin w-100 m-auto">
-  <form action="/check" method="POST">
     <img class="mb-4 doggo"  src="images/doggo1.png" alt="" width="80" height="100">
+
+<%    pending.forEach(function(item){  %>
     <div id="pawdiv">
-        <span><h1 class="h3 mb-3 fw-normal">Hemlo, Puparazzi!!</h1></span>
-        <span><img class="paw" src="images/paw.png"></span>
+        <s name="pending"><%= item.Username2 %></s>
     </div>
-    <input name="UName" type="text" class="form-control top"  placeholder="Username" required autofocus autocomplete="off">
-    <input name="Password" type="password" class="form-control middle"  placeholder="Paw-sword" required>
-    <!--<input name="email" type="email" class="form-control bottom" placeholder="Email" required>-->
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in!</button>
-    
-    <p>Not Registered till now? <a href="signup">Register Today</a></p>
+  <%    })   %>
 </main>
-
-
-    
   </body>
 </html>
