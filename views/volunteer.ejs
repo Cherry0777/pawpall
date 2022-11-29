@@ -69,38 +69,11 @@
 
         <div class="table container">
             <h2>Your Volunteers <span>.</span></h2>
-            <ul class="responsive-table">
-              <li class="table-header">
-                <div class="col col-2">Volunteer Name</div>
-                <div class="col col-1">Age</div>
-                <div class="col col-3">Number</div>
-                <div class="col col-4">Send Request</div>
-              </li>
-              <li class="table-row">
-                <div class="col col-2">John Doe</div>
-                <div class="col col-1">25</div>
-                <div class="col col-3">9856214563</div>
-                <div class="col col-4"><button class="butt">Send</button></div>
-              </li>
-              <li class="table-row">
-                <div class="col col-2">Jennifer Smith</div>
-                <div class="col col-1">22</div>
-                <div class="col col-3">9856215689</div>
-                <div class="col col-4"><button class="butt">Send</button></div>
-              </li>
-              <li class="table-row">
-                <div class="col col-2">John Smith</div>
-                <div class="col col-1">47</div>
-                <div class="col col-3">9956714453</div>
-                <div class="col col-4"><button class="butt">Send</button></div>
-              </li>
-              <li class="table-row">
-                <div class="col col-2">John Carpenter</div>
-                <div class="col col-1">41</div>
-                <div class="col col-3">9423516872</div>
-                <div class="col col-4"><button class="butt">Send</button></div>
-              </li>
-            </ul>
+            <%  volunteer.forEach(function(item){  %>
+                <div id="pawdiv">
+                    <s name="vname"><%= item.Owner_name%></s>
+                </div>
+              <%    })   %>
           </div>
 
       </div>
@@ -126,5 +99,4 @@
   <script src="assets/js/main2.js"></script>
 
 </body>
-
 </html>

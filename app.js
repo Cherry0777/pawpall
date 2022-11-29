@@ -94,7 +94,6 @@ app.post('/add', async (req, res, next)=>{
  })    
 })
 
-
 app.get('/playmates', function(req, res){
     var s=1;
 var obj = {};
@@ -119,7 +118,20 @@ var obj = {};
         if(err) throw err
         else{
            obj = {frens: result};
-           res.render('frens', obj);
+           res.render('frens', obj);    
+        }
+        console.log("Hello"); 
+    })    ;
+});
+
+app.post('/volunteers',function(req,res){
+var obj = {};
+    db.query("select * from profile",function(err,result){
+        //select Username2 from relation where status = 'F' and username1 ='"+curusername+"';
+        if(err) throw err
+        else{
+           obj = {volunteer: result};
+           res.render('volunteer', obj);    
         }
         console.log("Hello"); 
     })    ;
